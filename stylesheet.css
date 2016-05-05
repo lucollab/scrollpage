@@ -1,0 +1,272 @@
+
+body{
+	background-color: #E8E8E8;
+	color: black;
+}
+
+.titel {
+	float: left;
+	color: white;
+}
+
+.navigation{
+	position: fixed;
+	z-index: 99;
+	padding: 0px;
+	left: 0;
+	right: 0;
+	background-color: #278DBC;
+	top: 0;
+	height: 46px;
+	margin-top: 0px;
+}
+
+.titel {
+	float: left;
+	width: 100px;
+	margin: 15px;
+}
+
+.navigationspunkte {
+	color: #FFF;
+	list-style: none;
+	float: right;
+	padding: 0px;
+	font-family: "Open Sans","Helvetica Neue","sans-serif";
+}
+
+.menupunkt {
+	float: left;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0px 10px;
+	padding: 0px;
+	outline: 0px none;
+	color: white;
+}
+
+.menupunkt a:hover {
+	background-color: #78C8E6;
+	padding: 16px 14px 11px 15px;
+}
+
+.menupunkt a {
+	padding: 15px;
+	padding: 16px 14px 11px 15px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	//color white//
+}
+
+a:hover {
+	//color white//
+	text-decoration: none;
+}
+
+.inhalt {
+	border-radius: 2px;
+	border: 0px solid;
+	margin: 0px auto;
+	margin-top: 110px;
+	padding: 30px;
+	width: 900px;
+	background-color: white;
+}
+
+.inhalt-titel {
+	margin: 0px;
+	overflow: hidden;
+	display: block;
+}
+
+.seiten-titel {
+	float: left;
+	font-size: 39px;
+	font-weight: 200;
+	line-height: 1;
+	margin: 0px;
+}
+
+.seitenbeschreibung {
+	max-width: 70%;
+	color: #888;
+	float: right;
+	font-size: 24px;
+	margin-top: 10px;
+	padding: 2px 0px 0px;
+}
+
+.inhaltbody {
+	margin-top: 20px;
+	color: #555;
+}
+
+.inhaltviewer {
+	position: relative;
+	display: block;
+	line-height: 1.231;
+}
+
+.inhaltfilter {
+	margin: 0px;
+	padding: 0px;
+}
+
+.inhaltsfenster {
+	background-color: #FAFAFA;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	margin: 0px -29px;
+	overflow: hidden;
+	padding: 15px 15px 100px;
+	clear: both;
+	color: #999;
+}
+
+.inhaltsfenster .filterelemente a {
+	color: #999;
+	cursor: pointer;
+	font-size: 13px;
+	display: line-block;
+	margin: 0px 0px 0px 20px;
+	padding-bottom: 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.filterleiste {
+	margin: 10px 20px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.filterleistentitel {
+	float: left;
+	margin: 0px;
+	font-size: 18px;
+	width: 50%;
+	font-weight: normal;
+}
+
+.anzahlelemente {
+	font-weight: bold;
+	color: #777;
+	font-size: 18px;
+}
+
+.filterelemente {
+	float: right;
+	text-align: right;
+	width: 45%;
+	margin: 0px;
+	padding: 0px 5px;
+	font-size: 13px;
+	color: grey;
+}
+
+.filterelemente a {
+	color: grey;
+}
+
+.choosen {
+	border-bottom: 3px solid #444;
+	font-weight: bold;
+	color: black;
+}
+
+.choosen a {
+	color: black;
+}
+
+.element {
+	overflow: hidden;
+	background-color: #F0F0F0;
+	background-image: none;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	border: 1px solid #DDD;
+	box-sizing: border-box;
+	margin: 20px;
+	float: left;
+	width: 422px;
+	height: 370px;
+	position: relative;
+	padding: 0px;
+}
+
+.element-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	background-image: none;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	height: 315px;
+	line-height: 280px;
+	opacity: 0;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	transition-property: opacity;
+	transition-duration: 0.1s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+.element:hover .element-overlay {
+	opacity: 1;
+}
+
+.button-dunkel {
+	box-shadow: 0px 1px 0px rgba(120, 200, 230, 0.5) inset;
+	line-height: 60px;
+	padding: 12px 20px;
+	text-align: center;
+	height: auto;
+	text-decoration: none;
+	border: medium none;
+	border-radius: 3px;
+	background-color: #278DBC;
+}
+
+.button-dunkel:hover {
+	box-shadow: 0px 1px 0px rgba(120, 200, 230, 0.7) inset;
+}
+
+.element-links {
+	line-height: 20px;
+	position: absolute;
+	bottom: 80px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.elementlink1 {
+}
+
+.elementbeschreibung {
+	border-top: 1px solid #DDD;
+	color: black;
+	font-size: 12px;
+	background-color: #F0F0F0;
+	padding-top: 5px;
+}
